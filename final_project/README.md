@@ -4,4 +4,5 @@
 * Use a custom python script to remove genes with multiple matches
 * Speed up orthology inference by excluding known paralogs
 * Expected to be especially effective in plants and fungi with histories of duplication events
+* An optional step for a novel phylogenomics pipeline
 * More to come!
