@@ -6,7 +6,7 @@ Orthology inference, wherein genes among a set of organisms are evaluated for or
 
 ### Methods
 
-[Figure of workflow goes here]
+![alt text](https://github.com/jacksonhturner/lfsc_507/blob/main/final_project/LFSC_507_workflow.drawio.png)
 
 A set of 29 plants within the family Gesneriaceae is selected for analysis due to its history of hybridization and genome duplication. Shotgun sequencing reads were downloaded from NCBI and trimmed, assembled, and annotated. Amino acid sequences were recovered from annotations, and sequences from each sample were queried against themselves using DIAMOND. Identified sequence matches were excluded from analysis and non-matching sequences were retained via a custom python script. All-vs-all orthology inference was conducted upon filtered sequences with OrthoFinder. Genes orthologous in at least 50% of taxa were recovered for downstream analysis. Putatitve orthologs were translated and aligned, and nucleotide sequences were mapped to amino acid alignments. Mapped nucleotide alignments were masked, and ML phylogenetic inference was conducted with IQ-TREE2 with ModelFinder-Plus. 
 
